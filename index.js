@@ -1,9 +1,14 @@
 function isPalindrome(word) {
   // Write your algorithm here
+
+  string = word.toLowerCase().split("").reverse().join("");
+  return string === word;
+ 
 }
 
 /* 
   Add your pseudocode here
+  Take the string, lowercase it, split it, reverse it, join it and return the result of the comparison
 */
 
 /*
@@ -23,3 +28,6 @@ if (require.main === module) {
 }
 
 module.exports = isPalindrome;
+
+
+
